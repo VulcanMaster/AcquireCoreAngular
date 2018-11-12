@@ -1,0 +1,10 @@
+﻿body {
+}
+
+.bluetext {
+    color: blue;
+}
+     
+input[type=submit] {
+    width: auto;
+}
