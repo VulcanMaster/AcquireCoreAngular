@@ -10,6 +10,7 @@ namespace AcqureCoreAng.Web.Controllers
     {
         public IActionResult Index()
         {
+            //throw new InvalidOperationException("Bad things happened.");
             return View();
         }
     }
