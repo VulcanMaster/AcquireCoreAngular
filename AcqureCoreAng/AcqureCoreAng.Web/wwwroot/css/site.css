@@ -8,3 +8,20 @@
 input[type=submit] {
     width: auto;
 }
+
+
+.itemDemoLogo {
+    height: 200px;
+    width: 200px;
+    float: left;
+    margin-right: 30px;
+}
+
+.mainDivWrapper {
+    background-color: lightgray;
+    border: 1px solid;
+    padding: 5px 5px 5px 5px;
+    width: 400px;
+    max-width: 450px;
+    overflow: hidden;
+}

@@ -3,3 +3,6 @@
 ################################################################################
 
 /AcqureCoreAng/AcqureCoreAng.Web/obj
+/AcqureCoreAng/.vs
+/AcqureCoreAng/AcqureCoreAng.Web/bin/Debug/netcoreapp2.1
+/AcqureCoreAng/AcqureCoreAng.Web/node_modules/jquery

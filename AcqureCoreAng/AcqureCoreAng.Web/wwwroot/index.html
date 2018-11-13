@@ -6,40 +6,43 @@
     <title></title>
 </head>
 <body>
-    <div>
-        <img src="/img/examlple.jpg" style="height: 100px; width: 100px;'" />
-        <h2>Item of Symbol</h2>
-        <ul>
-            <li>
-                Price 999.99$
-            </li>
-            <li>
-                Name: Special supply
-            </li>
-            <li>
-                Description: Very great!
-            </li>
-        </ul>
-        <button>Buy.</button>
+<div class="mainDivWrapper">
+    <div style="display: grid;" >
+        <div>
+            <img class="itemDemoLogo" src="/img/examlple.jpg" />
+            <h2>Item of Symbol</h2>
+            <ul>
+                <li>Price 999.99$</li>
+                <li>Name: Special supply</li>
+                <li>Description: Very great!</li>
+            </ul>
+            <button id="buyButton">Buy</button>
+        </div>
     </div>
-    <form>
-        <label>Your Name:</label>
-        <br />
-        <input />
-        <br />
-        <label class="bluetext">Email:</label>
-        <br />
-        <input type="email" />
-        <br />
-        <label>Subject:</label>
-        <br />
-        <input type="text" />
-        <br />
-        <label>Message:</label>
-        <br />
-        <textarea rows="4"></textarea>
-        <br />
-        <input type="submit" value="Send Message" />
-    </form>
+
+    <div>
+        <form id="theForm">
+            <label>Your Name:</label>
+            <br />
+            <input />
+            <br />
+            <label class="bluetext">Email:</label>
+            <br />
+            <input type="email" />
+            <br />
+            <label>Subject:</label>
+            <br />
+            <input type="text" />
+            <br />
+            <label>Message:</label>
+            <br />
+            <textarea rows="4"></textarea>
+            <br />
+            <input type="submit" value="Send Message" />
+        </form>
+    </div>
+</div>
+    <script src="/node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="js/index.js"></script>
 </body>
 </html>

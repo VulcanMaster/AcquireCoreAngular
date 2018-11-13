@@ -22,6 +22,7 @@ namespace AcqureCoreAng.Web
         {
             app.UseDefaultFiles();
             app.UseStaticFiles();
+            app.UseNodeModules(env);
             
 
             //if (env.IsDevelopment())
