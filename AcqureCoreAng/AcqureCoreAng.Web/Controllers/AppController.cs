@@ -14,9 +14,11 @@ namespace AcqureCoreAng.Web.Controllers
             return View();
         }
 
+        [HttpGet("contact")]
         public IActionResult Contact()
         {
             ViewBag.Title = "Contact Us";
+            throw new InvalidOperationException("Bad things happen");
             //throw new InvalidOperationException("Bad things happened.");
             return View();
         }

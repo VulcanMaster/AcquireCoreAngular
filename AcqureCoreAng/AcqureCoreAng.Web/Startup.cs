@@ -31,9 +31,13 @@ namespace AcqureCoreAng.Web
             // the option about environment type is in project properties, shift `Debug`,
             // the section `Environment variables`, something like `ASPNETCORE_ENVIRONMENT`
             // with the Value `Development`.
-            if (env.IsDevelopment()) //  the same: if (env.IsEnvironment("Development"))
+            if (!env.IsDevelopment()) //  the same: if (env.IsEnvironment("Development"))
             {
                 app.UseDeveloperExceptionPage();
+            }
+            else
+            {
+                app.UseExceptionHandler("/error");
             }
 
             //app.UseDefaultFiles();
