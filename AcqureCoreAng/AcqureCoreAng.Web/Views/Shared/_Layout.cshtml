@@ -1,16 +1,16 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
+﻿@{
 }
 <!DOCTYPE html>
 <html>
 <head>
-    <link href="/css/site.css" rel="stylesheet" />
     <title>Acquire Core Angular: @ViewBag.Title</title>
+    <link href="~/node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/node_modules/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="/css/site.css" rel="stylesheet" />
+
 </head>
 <body>
-    <header>
+    <header class="container">
         <h1>Welcome to Acqiure Core Angular</h1>
         <menu>
             <ul>
@@ -20,14 +20,20 @@
             </ul>
         </menu>
     </header>
-    <section>
-        <h2>@ViewBag.Title</h2>
+    <section class="container">
+        <h2 class="text-center">
+            <i class="fa fa-paint-brush"></i>
+            @ViewBag.Title
+        </h2>
         @RenderBody()
     </section>
-    <footer>Copyright 2018 by Nothing</footer>
+<footer class="container">
+    <div class="text-center">Copyright 2018 by Nothing</div>
+</footer>
 
-@*<script src="/node_modules/jquery/dist/jquery.min.js"></script>*@
+    @*<script src="/node_modules/jquery/dist/jquery.min.js"></script>*@
     <script src="~/node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="~/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     @*<script src="js/index.js"></script>*@
     <script src="~/js/index.js"></script>
 

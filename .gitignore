@@ -6,3 +6,5 @@
 /AcqureCoreAng/.vs
 /AcqureCoreAng/AcqureCoreAng.Web/bin/Debug/netcoreapp2.1
 /AcqureCoreAng/AcqureCoreAng.Web/node_modules/jquery
+/AcqureCoreAng/AcqureCoreAng.Web/node_modules/bootstrap
+/AcqureCoreAng/AcqureCoreAng.Web/node_modules/font-awesome
