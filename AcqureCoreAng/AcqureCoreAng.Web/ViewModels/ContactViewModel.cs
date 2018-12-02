@@ -9,7 +9,7 @@ namespace AcqureCoreAng.Web.ViewModels
     public class ContactViewModel
     {
         [Required]
-        [MaxLength(10)]
+        [MinLength(5, ErrorMessage = "Too Short")]
         public string Name { get; set; }
 
         [Required]

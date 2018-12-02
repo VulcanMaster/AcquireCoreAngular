@@ -15,7 +15,7 @@
 
     <label asp-for="Name">Your Name:</label>
     <br />
-    <input asp-for="Name" name="name" />
+    <input type="text" asp-for="Name" name="name" />
     <span asp-validation-for="Name"></span>
     <br />
 
@@ -38,4 +38,9 @@
     <br />
 
     <input type="submit" value="Send Message" />
+    
+    <br/>
+    <div>
+        @ViewBag.UserMessage
+    </div>
 </form>

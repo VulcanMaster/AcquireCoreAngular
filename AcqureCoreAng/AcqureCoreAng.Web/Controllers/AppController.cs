@@ -4,11 +4,19 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using AcqureCoreAng.Web.Services;
 
 namespace AcqureCoreAng.Web.Controllers
 {
     public class AppController : Controller
     {
+        private readonly IMailService _mailService;
+
+        public AppController(IMailService mailService)
+        {
+            this._mailService = mailService;
+        }
+
         public IActionResult Index()
         {
             ViewBag.Title = "Home";
@@ -31,8 +39,9 @@ namespace AcqureCoreAng.Web.Controllers
             if (ModelState.IsValid)
             {
                 // send email
-
-
+                _mailService.SendMessage(model.Email, model.Subject, model.Message);
+                ViewBag.UserMessage = "Mail Sent";
+                ModelState.Clear();
             }
             else
             {
