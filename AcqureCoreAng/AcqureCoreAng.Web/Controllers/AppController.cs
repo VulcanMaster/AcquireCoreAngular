@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using AcqureCoreAng.Web.ViewModels;
+using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,6 +11,7 @@ namespace AcqureCoreAng.Web.Controllers
     {
         public IActionResult Index()
         {
+            ViewBag.Title = "Home";
             //throw new InvalidOperationException("Bad things happened.");
             return View();
         }
@@ -18,8 +20,14 @@ namespace AcqureCoreAng.Web.Controllers
         public IActionResult Contact()
         {
             ViewBag.Title = "Contact Us";
-            throw new InvalidOperationException("Bad things happen");
+            //throw new InvalidOperationException("Bad things happen");
             //throw new InvalidOperationException("Bad things happened.");
+            return View();
+        }
+
+        [HttpPost("contact")]
+        public IActionResult Contact(ContactViewModel model)
+        {
             return View();
         }
 
