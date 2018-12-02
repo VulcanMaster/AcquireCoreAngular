@@ -10,23 +10,27 @@
     <title>Acquire Core Angular: @ViewBag.Title</title>
 </head>
 <body>
-<header>
-    <h1>Welcome to Acqiure Core Angular</h1>
-    <menu>
-        <ul>
-            <li><a asp-controller="App" asp-action="Index">Home</a></li>
-            <li><a asp-controller="App" asp-action="Contact">Contact</a></li>
-            <li><a asp-controller="App" asp-action="About">About</a></li>
-        </ul>
-    </menu>
-</header>
+    <header>
+        <h1>Welcome to Acqiure Core Angular</h1>
+        <menu>
+            <ul>
+                <li><a asp-controller="App" asp-action="Index">Home</a></li>
+                <li><a asp-controller="App" asp-action="Contact">Contact</a></li>
+                <li><a asp-controller="App" asp-action="About">About</a></li>
+            </ul>
+        </menu>
+    </header>
     <section>
         <h2>@ViewBag.Title</h2>
         @RenderBody()
     </section>
     <footer>Copyright 2018 by Nothing</footer>
 
-    <script src="/node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="js/index.js"></script>
+@*<script src="/node_modules/jquery/dist/jquery.min.js"></script>*@
+    <script src="~/node_modules/jquery/dist/jquery.min.js"></script>
+    @*<script src="js/index.js"></script>*@
+    <script src="~/js/index.js"></script>
+
+    @RenderSection("scripts", false)
 </body>
 </html>
